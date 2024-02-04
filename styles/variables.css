@@ -2,3 +2,21 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --header-background-image: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --h1-font-color: #DB00FF;
+  --card-content-font-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --title-color: #000028;
+  --title-bg-color: #FF0070;
+  --title-shadow-color: #FF0070;
+  --rec-visible: block;
+  /*--img-sunset-width: 100svw;*/
+  /*--accent-color-medium: #FF8DCB;*/
+  --card-grid-column-qty: 3;
+  --content-width: calc(100vi - 20px);
+  --page-padding: 10px;
+}
+
