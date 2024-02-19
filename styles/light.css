@@ -18,6 +18,7 @@
   --title-bg-color: #FF8DCB;
   --title-shadow-color: #FF0070;
   --rec-visible: none;
+  --outline-color-hover: rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,13 +33,7 @@
     --title-bg-color: #FF8DCB;
     --title-shadow-color: #FF0070;
     --rec-visible: none;
+    --outline-color-hover: rgba(50, 49, 45, 0.4);
   }
 
-  .rec-font {
-    display: var(--rec-visible);
-  }
-  
-  .rec-point::before {
-    display: var(--rec-visible);
-  }
 }
