@@ -16,7 +16,7 @@
   --accent-color: #353430;
   --title-color: #353430;
   --title-bg-color: #FF8DCB;
-  --title-shadow-color: #FF0070;
+  --title-shadow-color: #FF8DCB;
   --rec-visible: none;
   --outline-color-hover: rgba(50, 49, 45, 0.4);
 }
@@ -31,9 +31,21 @@
     --accent-color: #353430;
     --title-color: #353430;
     --title-bg-color: #FF8DCB;
-    --title-shadow-color: #FF0070;
+    --title-shadow-color: #FF8DCB;
     --rec-visible: none;
     --outline-color-hover: rgba(50, 49, 45, 0.4);
   }
 
+}
+
+@media (prefers-color-scheme: light) and (width >= 1024px) {
+  :root {
+    --title-shadow-color: #FF0070;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .page.theme_light {
+    --title-shadow-color: #FF0070;
+  }
 }

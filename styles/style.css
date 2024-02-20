@@ -241,7 +241,7 @@
 
 .focus {
   grid-area: focus;
-  text-shadow: 2px 2px 0px var(--accent-color, #FF0070);
+  text-shadow: 2px 2px 0px var(--title-shadow-color, #FF0070);
   align-self: center;
   max-height: calc(100vb - 50px);
   display: flex;
@@ -333,6 +333,7 @@
 .header__theme-menu-button_active {
   border-width: 1px;
   pointer-events: none;
+  padding-top: 0;
 }
 
 .pink-block {
@@ -379,7 +380,12 @@
     grid-column: span 2;
   }
 
-  .block-hard, .block-concentrate, .section__block-wrapper { 
+  .block-hard, .section__block-wrapper { 
+    margin-left: 17px;
+    margin-right: 10px;
+  }
+  
+  .block-concentrate { 
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -402,8 +408,15 @@
 }
 
 @media screen and (width >= 1024px) {
+  .block-hard, .section__block-wrapper { 
+    margin-left: 10px;
+  }
+  
   .block-concentrate { 
     margin-left: 10px;
+  }
+
+  .block-concentrate { 
     grid-template-columns: repeat(3, 1fr)
   }
   
